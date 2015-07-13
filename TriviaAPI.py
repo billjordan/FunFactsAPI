@@ -49,7 +49,7 @@ class TriviaAPI(object):
             # question = question.replace(div_end, "")
             # question = question.replace(line_break, "")
             question = html.unescape(question)
-            question = BeautifulSoup(question).text
+            question = BeautifulSoup(question, "html.parser").text
             fact = Fact(question,
                         result["id"],
                         question=question,

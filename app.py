@@ -12,10 +12,7 @@ def obj_dict(obj):
 
 @app.route('/')
 def hello_world():
-    thing = {
-        "this": "that"
-    }
-    return json.dumps(thing)
+    return "Fun Facts API"
 
 @app.route('/categories')
 def get_categories():
