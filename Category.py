@@ -6,6 +6,7 @@ class Category(JSONEncoder):
         self.label = label
         self.ID = ID
 
-
+    def __str__(self):
+        return "ID:{}\t{}".format(self.ID, self.label)
 
 
